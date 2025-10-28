@@ -9,7 +9,7 @@ navbar:
       href: resume.html
     - text: "Let's connect!"
       href: professional_networks.html
-    - text: "flexdashboard"
+    - text: "Flexdashboard"
       href: flexdashboard.html  
   right:
     - icon: fa-envelope fa-lg
