@@ -7,8 +7,6 @@ output:
     theme: darkly 
 ---
 
-# Loading appropriate datasets
-
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
