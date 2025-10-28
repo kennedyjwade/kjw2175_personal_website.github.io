@@ -14,7 +14,7 @@ output:
 
 This website was created by **Kennedy J. Wade** using *R Markdown* to handle all the hard work behind the scenes.  
 
-I’m currently a **Master of Public Health student** at **Columbia University’s Mailman School of Public Health**, specializing in **Epidemiology**, and pursuing a certificate in **Applied Biostatistics and Data Science**. My interests focus on **spatial epidemiolgy**, **environemtal health**, and  other **social determinants of health** that affect population well- being! I'm passionate about using data and community - engaged research to identify and address health inequities.
+I’m currently a **Master of Public Health student** at **Columbia University’s Mailman School of Public Health**, specializing in **Epidemiology**, and pursuing a certificate in **Applied Biostatistics and Data Science**. My interests focus on **spatial epidemiology**, **environmental health**, and  other **social determinants of health** that affect population well- being! I'm passionate about using data and community - engaged research to identify and address health inequities.
 
 Outside of academics, I enjoy staying active, volunteering in community programs, and traveling. 
 
