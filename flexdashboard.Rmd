@@ -45,7 +45,7 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-#Plotly Instacart Scatterplot
+#Plotly Instacart Scatterplot 
 
 instacart |> 
   filter(order_number <= 50) |> 
@@ -65,7 +65,6 @@ instacart |>
     xaxis = list(title = "Order Number"),
     yaxis = list(title = "Product", showticklabels = FALSE) 
   )
-
 ```
 
 ### Chart C
