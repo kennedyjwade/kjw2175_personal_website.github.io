@@ -1,0 +1,101 @@
+---
+title: "Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: darkly 
+---
+
+# Loading appropriate datasets
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(forcats)
+library(p8105.datasets)
+library(plotly)
+data("instacart")
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+#Plotly Instacart barchart
+
+instacart |> 
+  count(aisle) |>                         
+  filter(n > 10000) |>                    
+  mutate(aisle = fct_reorder(aisle, n)) |> 
+  plot_ly( x = ~aisle, y = ~n, type = "bar",color = ~aisle, colors = "viridis" ) |>
+  layout(
+    title = "Aisles with More Than 10,000 Orders",
+    xaxis = list(title = "Aisle"),
+    yaxis = list(title = "Number of Items Ordered"),
+    showlegend = FALSE
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+#Plotly Instacart Scatterplot
+
+instacart |> 
+  filter(order_number <= 50) |> 
+  sample_n(5000) |> 
+  mutate(text_label = str_c("Product: ", product_name, "\nOrder #: ", order_number)) |> 
+  plot_ly(
+    x = ~order_number,        
+    y = ~product_name,       
+    type = "scatter",
+    mode = "markers",
+    color = ~order_number,
+    text = ~text_label,       
+    alpha = 0.5
+  ) |> 
+  layout(
+    title = "Scatterplot: Order Number vs Product",
+    xaxis = list(title = "Order Number"),
+    yaxis = list(title = "Product", showticklabels = FALSE) 
+  )
+
+```
+
+### Chart C
+
+```{r}
+# Plotly Instacart Scatterplot
+
+
+top_aisles <- instacart |> 
+  count(aisle) |> 
+  top_n(10, n) |> 
+  pull(aisle)
+
+instacart |> 
+  filter(aisle %in% top_aisles) |>                
+  mutate(aisle = fct_reorder(aisle, order_number)) |>  
+  plot_ly(
+    y = ~order_number, 
+    color = ~aisle, 
+    type = "box", 
+    colors = "viridis"
+  ) |> 
+  layout(
+    title = "Distribution of Order Numbers by Top 10 Aisles",
+    yaxis = list(title = "Order Number"),
+    xaxis = list(title = "Aisle")
+  )
+```
+
+
+
