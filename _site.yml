@@ -1,0 +1,21 @@
+name: "KJW2175 Personal Website"
+output_dir: "."
+navbar:
+  title: "Kennedy J. Wade"
+  left:
+    - text: "landing page"
+      href: Landing page.html
+    - text: "Resume"
+      href: resume.html
+    - text: "Let's connect!"
+      href: professional_networks.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:kennedyjwade@example.com
+    - icon: fa-github fa-lg
+      href: https://github.com/kennedyjwade
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/kennedyjwade/
+output:
+  html_document:
+    theme: cerulean
