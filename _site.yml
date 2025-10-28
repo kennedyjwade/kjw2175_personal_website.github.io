@@ -3,8 +3,8 @@ output_dir: "."
 navbar:
   title: "Kennedy J. Wade"
   left:
-    - text: "landing page"
-      href: Landing page.html
+    - text: "home"
+      href: index.html
     - text: "Resume"
       href: resume.html
     - text: "Let's connect!"

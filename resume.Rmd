@@ -9,5 +9,5 @@ Here is a summary of my academic background, research experience, and profession
 
  [Wade_Kennedy_Resume.pdf](Wade_Kennedy_Resume.pdf)
 
-go back to the [homepage](Landing page.html) here. 
+go back to the [homepage](home.html) here. 
 
