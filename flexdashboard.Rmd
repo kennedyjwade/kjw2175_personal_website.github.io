@@ -16,12 +16,12 @@ library(plotly)
 data("instacart")
 ```
 
+# Here are a few graphs I made with the 2017 Instacart Online Grocery Shopping Dataset 
 
-Column {data-width=650}
+ {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart A
-
 ```{r}
 
 #Plotly Instacart barchart
@@ -39,7 +39,7 @@ instacart |>
   )
 ```
 
-Column {data-width=350}
+ {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B
